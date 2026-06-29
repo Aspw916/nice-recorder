@@ -31,6 +31,15 @@ The current Windows package is an unsigned zip build. If you later need a signed
 
 ## GitHub Release
 
+Create and push a version tag:
+
+```bash
+git tag v1.0.0
+git push origin v1.0.0
+```
+
+The GitHub Actions workflow can build release artifacts from version tags or from manual `workflow_dispatch` runs.
+
 Create a GitHub Release from the matching tag and upload the Windows package, for example:
 
 ```text

@@ -45,6 +45,12 @@ Run the desktop app:
 npm run start
 ```
 
+## Download
+
+Windows builds are published from the repository's GitHub Releases page.
+
+## Build
+
 Build a Windows release package:
 
 ```bash
@@ -52,35 +58,6 @@ npm run build:win
 ```
 
 The packaged output is written to `release/`.
-
-## GitHub Release Workflow
-
-Use the GitHub repository for source code. Put downloadable Windows builds in GitHub Releases instead of committing packaged Electron binaries into Git.
-
-Suggested first release asset:
-
-```text
-NiceRecorder-v1.0.0-win-x64.zip
-```
-
-## Publish to GitHub
-
-Create an empty GitHub repository named `nice-recorder`, then run:
-
-```bash
-git add .
-git commit -m "Initial open source release"
-git branch -M main
-git remote add origin https://github.com/<your-name>/nice-recorder.git
-git push -u origin main
-```
-
-To publish a versioned build:
-
-```bash
-git tag v1.0.0
-git push origin v1.0.0
-```
 
 ## License
 
