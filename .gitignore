@@ -1,0 +1,14 @@
+node_modules/
+release/
+out/
+dist-electron/
+*.log
+*.tmp
+*.webm
+*.mp4
+*.png
+*.asar
+NiceRecorder-win32-x64/
+!.github/
+!docs/
+!skills/

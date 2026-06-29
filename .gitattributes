@@ -1,0 +1,9 @@
+* text=auto eol=lf
+
+*.png binary
+*.webm binary
+*.zip binary
+*.exe binary
+*.dll binary
+*.pak binary
+*.asar binary

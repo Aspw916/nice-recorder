@@ -1,0 +1,41 @@
+{
+  "name": "nice-recorder",
+  "version": "1.0.0",
+  "description": "A lightweight desktop screen recorder for Windows.",
+  "author": "阿司匹汪",
+  "license": "MIT",
+  "private": false,
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build:win": "electron-builder --win --x64",
+    "pack:win": "electron-builder --win --x64 --dir"
+  },
+  "dependencies": {
+    "webm-duration-fix": "^1.0.4"
+  },
+  "devDependencies": {
+    "electron": "^35.0.0",
+    "electron-builder": "^24.13.3"
+  },
+  "build": {
+    "appId": "com.nicerecorder.app",
+    "productName": "NiceRecorder",
+    "files": [
+      "main.js",
+      "preload.cjs",
+      "dist/**/*",
+      "node_modules/**/*",
+      "package.json"
+    ],
+    "directories": {
+      "output": "release"
+    },
+    "win": {
+      "signAndEditExecutable": false,
+      "target": [
+        "zip"
+      ]
+    }
+  }
+}
